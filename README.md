@@ -1,4 +1,11 @@
-# ink-mouse
+# ink-mouse-alt
+
+This is an alternate version of [ink-mouse](https://github.com/zenobi-us/ink-mouse) with the following changes:
+
+- Pulled in Ink 6.0.1 compat (https://github.com/luketurner/ink-mouse-alt/pull/1)
+- Simplified deployment toolchain, focused on native Typescript usage w/Bun
+
+# Original readme
 
 Provides mouse support for [Ink](http://github.com/vadimdemedes/ink) components.
 
@@ -111,7 +118,7 @@ This project uses ASDF and Yarn.
 - [ ] Support absolute elements
   - Elements positioned absolutely that occupy same space as other elements will mean they both recieve click and hover events.
   - Ink supports absolute positioning. I think z order is based on order rendered.
-  - This means to simluate knowing the z order, we might need to register the order in which elements subscribe to events? 
+  - This means to simluate knowing the z order, we might need to register the order in which elements subscribe to events?
 - [ ] Add tests.
   - testing a device may be difficult; but the implementation is sufficiently abstracted from the device that it should be possible to mock the device input stream.
     - [x] stdin event stream parsing
